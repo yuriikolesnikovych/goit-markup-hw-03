@@ -1,0 +1,258 @@
+/* Палитра основных цветов */
+/* цвета логотипа #2196F3; #000000 */
+/* цвет меню навигации, h3 #212121, акцент, ховер #2196F3 */
+/* h1, а также цвет текста в некоторых элементов #ffffff  */
+/* цвет фона в хиро, цвет фона в футере #2F303A */
+/* контакты в шапке, контент в секции преимущества #757575 */
+/* team background, button background #F5F4FA */
+/* элементы контактов в футере rgba(255, 255, 255, 0.6); */
+/* фон в секции наши преимущества и чем мы занимаемся #E5E5E5 */
+
+:root {
+  --title-color: #212121;
+  --accent-color: #2196f3;
+  --bg-main-color: #e5e5e5;
+  --main-text-color: #757575;
+  --bg-header-team:  #2f303a;
+  --secondary-text-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-main-color);
+  color: var(--main-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Header */
+.header {
+  background-color: var(--secondary-text-color);
+}
+
+.site-nav .link {
+  color: var(--title-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.nav-contact .link {
+  color: var(--main-text-color);;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.nav-contact .link:hover,
+.nav-contact .link:focus {
+  color: var(--accent-color);
+}
+
+.header .logo {
+  font-family: Raleway, Oleo Script, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo-web {
+  color: var(--accent-color);
+}
+.logo-studio {
+  color: #000000;
+}
+
+/* стили для index.html */
+/* heroes */
+.heroes {
+  background-color: var(--bg-header-team);
+}
+
+.heroes .title {
+  color: var(--secondary-text-color);
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.heroes .button {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+  .heroes .button:hover,
+  .heroes .button:focus {
+    background-color: var(--secondary-text-color);
+    color: var(--accent-color);
+  }
+
+/* Секции */
+
+.hidden-title {
+  color:var(--bg-main-color);;
+}
+
+.list-title {
+  color: var(--title-color);
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.advantage-content {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.section-title {
+  color: var(--title-color);
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.team {
+  background-color: #f5f4fa;
+}
+.team .title {
+  color: var(--title-color);
+  background-color: var(--secondary-text-color);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team .spec {
+  background-color: var(--secondary-text-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19px;
+  text-align: center;
+}
+
+.team .background {
+  background-color: var(--secondary-text-color);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--bg-header-team);
+}
+
+.footer .logo {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.footer .logo-web {
+  color: var(--accent-color);
+}
+
+.footer .logo-studio {
+  color: var(--secondary-text-color);
+}
+
+.address {
+  color: var(--secondary-text-color);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.special-link {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+.special-link:hover,
+.special-link:focus {
+  color: var(--accent-color);
+}
+
+/* стили для portfolio.html */
+
+.button-portfolio {
+  background-color: #f5f4fa;
+  color: var(--title-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+
+.portfolio-title {
+  color: var(--title-color);
+
+  font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 2
+letter-spacing: 0.06em;
+
+}
+
+.image-link{
+  text-decoration: none;
+}
+
+.portfolio-type {
+  color: var(--main-text-color);
+
+font-size: 16px;
+line-height: 1.87;
+}
