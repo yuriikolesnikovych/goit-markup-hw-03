@@ -17,6 +17,16 @@
   --secondary-text-color: #ffffff;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: var(--bg-main-color);
   color: var(--main-text-color);
