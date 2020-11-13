@@ -8,12 +8,15 @@
 /* элементы контактов в футере rgba(255, 255, 255, 0.6); */
 /* фон в секции наши преимущества и чем мы занимаемся #E5E5E5 */
 
+/* ширина контейнера контнета 1170+ 15*2 паддинги 
+высота хэдера 79  */
+
 :root {
   --title-color: #212121;
   --accent-color: #2196f3;
   --bg-main-color: #e5e5e5;
   --main-text-color: #757575;
-  --bg-header-team:  #2f303a;
+  --bg-header-team: #2f303a;
   --secondary-text-color: #ffffff;
 }
 
@@ -33,15 +36,27 @@ body {
 
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
 }
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Header */
 .header {
   background-color: var(--secondary-text-color);
+}
+
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
 }
 
 .site-nav .link {
@@ -64,7 +79,7 @@ body {
 }
 
 .nav-contact .link {
-  color: var(--main-text-color);;
+  color: var(--main-text-color);
 
   font-weight: 500;
   font-size: 14px;
@@ -97,16 +112,19 @@ body {
 /* heroes */
 .heroes {
   background-color: var(--bg-header-team);
+  text-align: center;
 }
 
 .heroes .title {
   color: var(--secondary-text-color);
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
 
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -120,36 +138,63 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  text-align: center;
+
+  display: inline-block;
+  min-width: 200px;
+  left: 700px;
+  top: 430px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 
-  .heroes .button:hover,
-  .heroes .button:focus {
-    background-color: var(--secondary-text-color);
-    color: var(--accent-color);
-  }
+.heroes .button:hover,
+.heroes .button:focus {
+  background-color: var(--secondary-text-color);
+  color: var(--accent-color);
+}
 
 /* Секции */
 
 .hidden-title {
-  color:var(--bg-main-color);;
+  color: var(--bg-main-color);
+
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0px;
+}
+
+.advantage {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .list-title {
   color: var(--title-color);
-
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .advantage-content {
   font-size: 14px;
   line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
+.our-business {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
 .section-title {
   color: var(--title-color);
 
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -158,11 +203,15 @@ body {
 
 .team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team .title {
   color: var(--title-color);
   background-color: var(--secondary-text-color);
 
+  margin-top: 30px;
+  margin-bottom: 0;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -172,6 +221,9 @@ body {
 
 .team .spec {
   background-color: var(--secondary-text-color);
+
+  margin-top: 10px;
+  margin-bottom: 30px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -186,6 +238,8 @@ body {
 /* Footer */
 .footer {
   background-color: var(--bg-header-team);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .logo {
@@ -249,19 +303,19 @@ body {
   color: var(--title-color);
 
   font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
-.image-link{
+.image-link {
   text-decoration: none;
 }
 
 .portfolio-type {
   color: var(--main-text-color);
 
-font-size: 16px;
-line-height: 1.87;
+  font-size: 16px;
+  line-height: 1.87;
 }
