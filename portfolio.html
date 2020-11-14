@@ -15,23 +15,26 @@
 <body>
     <!--Header-->
     <header class="header">
-        <nav>
+        <div class="container main-nav">
+        <nav class="main-nav">
             <a href="./index.html" class="logo"><span class="logo-web">Web</span><span
                     class="logo-studio">Studio</span></a>
             <ul class="site-nav list">
-                <li><a href="./index.html" class="link">Студия</a></li>
-                <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                <li><a href="#contacts" class="link">Контакты</a></li>
+                <li class="item"><a href="./index.html" class="link">Студия</a></li>
+                <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+                <li class="item"><a href="#contacts" class="link">Контакты</a></li>
             </ul>
         </nav>
         <ul class="nav-contact list">
-            <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+            <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+            <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
         </ul>
+        </div>
     </header>
     <main>
 <!--Portfolio filter-->
-<section>
+<section class="portfolio">
+    <div class="container">
     <h1 class="hidden-title">Наше портфолио</h1> <!-- Скрытый заголовок первого уровня -->
 <ul class="list">
     <li><button type="button" class="button-portfolio">Все</button></li>
@@ -92,11 +95,14 @@
         <h2 class="portfolio-title">Growing Business</h2>
         <p class="portfolio-type">Приложение</p>
     </a></li>
-</ul></section>
+</ul>
+</div>
+</section>
     </main>
     
 <!--Footer-->
 <footer class="footer">
+    <div class="container">
     <a href="./index.html" class="logo"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
     <address>
         <ul class="list" id="contacts">
@@ -105,6 +111,7 @@
             <li><a href="tel:+380991111111" class="special-link">+38 099 111 11 11</a></li>
         </ul>
     </address>
+    </div>
 </footer>
 </body>
 
