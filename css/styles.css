@@ -149,8 +149,11 @@ body {
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
-  padding-right: 452px;
-  padding-left: 452px;
+}
+
+.title-txt {
+  width: 696px;
+  margin: auto;
 }
 
 .heroes .title {
