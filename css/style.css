@@ -5,6 +5,16 @@
   --bg-title-color: #ffffff;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 .page {
   font-family: Roboto, sans-serif;
   font-weight: 400;
