@@ -15,6 +15,36 @@ html {
   box-sizing: inherit;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .page {
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -23,6 +53,8 @@ html {
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -46,7 +78,24 @@ font-family: Roboto, sans-serif; */
 
 /* ===== INDEX ===== */
 /* ===== HEADER ====== */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
+  margin-right: 92px;
 }
 
 .logo-web {
@@ -69,6 +118,11 @@ font-family: Roboto, sans-serif; */
   color: var(--secondary-text-color);
 }
 
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
 .site-nav .link {
   font-weight: 500;
   font-size: 14px;
@@ -85,6 +139,16 @@ font-family: Roboto, sans-serif; */
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-text-color);
+}
+
+.nav-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 .contacts-nav .link {
@@ -104,6 +168,7 @@ font-family: Roboto, sans-serif; */
 /* ===== HERO ====== */
 .hero {
   background-color: #2f303a;
+  text-align: center;
 }
 
 .hero-title {
@@ -119,17 +184,24 @@ font-family: Roboto, sans-serif; */
 }
 
 .hero-btn {
+  min-width: 200px;
+  min-height: 50px;
+  padding-top: 8px;
+  padding-right: 22px;
+  padding-bottom: 8px;
+  padding-left: 22px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
 
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 
   color: var(--bg-title-color);
   background-color: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -144,6 +216,7 @@ font-family: Roboto, sans-serif; */
 
 /* ===== ADVANTAGE ====== */
 .advantage-section {
+  outline: tomato 1px solid;
   background-color: #e5e5e5;
 }
 
