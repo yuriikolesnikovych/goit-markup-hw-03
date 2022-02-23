@@ -37,12 +37,30 @@ img {
   display: block;
 }
 
+address {
+  font-style: normal;
+}
+
 .container {
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }
 
 .page {
@@ -172,6 +190,12 @@ font-family: Roboto, sans-serif; */
 }
 
 .hero-title {
+  display: flex;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -214,10 +238,17 @@ font-family: Roboto, sans-serif; */
   cursor: pointer;
 }
 
+.btn-container {
+  padding-bottom: 200px;
+}
+
 /* ===== ADVANTAGE ====== */
-.advantage-section {
-  outline: tomato 1px solid;
+.advantage {
   background-color: #e5e5e5;
+}
+
+.advantage-list {
+  display: flex;
 }
 
 .advantage-list .adv-title {
@@ -236,26 +267,29 @@ font-family: Roboto, sans-serif; */
   letter-spacing: 0.03em;
 }
 
+.adv-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* ===== ABOUT US ====== */
 .about-section {
   background-color: #e5e5e5;
+  padding-bottom: 94px;
 }
 
-.about-section .section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+.about.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
 }
 
 /* ===== TEAM ====== */
-.team-section {
+.team {
   background-color: #f5f4fa;
 }
 
-.team-section .section-title {
+.team .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -264,7 +298,7 @@ font-family: Roboto, sans-serif; */
   color: var(--secondary-text-color);
 }
 
-.team-section .content-title {
+.team .content-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -273,16 +307,23 @@ font-family: Roboto, sans-serif; */
   color: var(--secondary-text-color);
 }
 
-.team-section .team-spec {
+.team .team-spec {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* ===== FOOTER ===== */
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .logo-web {
