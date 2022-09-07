@@ -39,10 +39,11 @@ img {
 
 address {
   font-style: normal;
+  margin-top: 20px;
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -190,19 +191,18 @@ font-family: Roboto, sans-serif; */
 .hero {
   background-color: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
-  display: flex;
   width: 696px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -211,17 +211,11 @@ font-family: Roboto, sans-serif; */
 }
 
 .hero-btn {
-  min-width: 200px;
-  min-height: 50px;
-  padding-top: 8px;
-  padding-right: 22px;
-  padding-bottom: 8px;
-  padding-left: 22px;
+  padding: 8px 22px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
 
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 
@@ -233,21 +227,19 @@ font-family: Roboto, sans-serif; */
 
 .hero-btn:hover,
 .hero-btn:focus {
-  color: var(--accent-text-color);
-  background-color: var(--bg-title-color);
+  color: var(--bg-title-color);
+  background-color: #188CE8;
+  
 }
 
 .cursor-btn {
   cursor: pointer;
 }
 
-.btn-container {
-  padding-bottom: 200px;
-}
 
 /* ===== ADVANTAGE ====== */
 .advantage {
-  background-color: #e5e5e5;
+  background-color: var(--bg-title-color);
 }
 
 .advantage-list {
@@ -255,6 +247,7 @@ font-family: Roboto, sans-serif; */
 }
 
 .advantage-list .adv-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -276,7 +269,7 @@ font-family: Roboto, sans-serif; */
 
 /* ===== ABOUT US ====== */
 .about-section {
-  background-color: #e5e5e5;
+  background-color: var(--bg-title-color);
   padding-bottom: 94px;
 }
 
@@ -284,7 +277,7 @@ font-family: Roboto, sans-serif; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
+ 
 }
 
 /* ===== TEAM ====== */
@@ -310,8 +303,12 @@ font-family: Roboto, sans-serif; */
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.team .team-content {
+padding-top: 30px;
+padding-bottom: 30px;
 }
 
 .team .team-spec {
@@ -319,7 +316,7 @@ font-family: Roboto, sans-serif; */
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
+  
 }
 
 .team-list {
@@ -363,12 +360,19 @@ font-family: Roboto, sans-serif; */
   color: var(--bg-title-color);
 }
 
+.footer-list{
+  margin-bottom: 9px;
+}
+
+
 .address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--bg-title-color);
+  
+
 }
 
 .address:hover,
@@ -390,12 +394,6 @@ font-family: Roboto, sans-serif; */
   color: var(--accent-text-color);
 }
 
-.spec-adr{
-  margin-top: 20px;
-}
-.spec-link{
-  margin-top: 9px;
-}
 
 /* ====== PORTFOLIO PAGE ====== */
 .portfolio{
@@ -439,6 +437,7 @@ margin-right: 8px;
 }
 
 .portfolio-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
